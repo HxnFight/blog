@@ -1,8 +1,11 @@
-* org-mode
-  - org-mode工作管理
-    - [[file:work/work.org][work.org]]
-  - org-mode知识管理
-    - [[file:study/study.org][study.org]]
-  - org-mode计划与日记管理
-    - [[file:life/life.org][life.org]]
-    
+* blog  说明
+** markdown_study.md
+   - [[file:markdown_study.md][markdown 学习笔记]]
+** mstmp+mutt.md
+   - [[file:mstmp%2Bmutt.md][Linux下邮件客户端使用]]
+** quic.org
+   - [[file:quic.org][google quic 安装笔记]]
+** sublime_markdown.md
+   - [[file:sublime_markdown.md][sublime markdown 的一些记录]]
+** temp.md
+   - [[file:temp.md][临时记录内容]]

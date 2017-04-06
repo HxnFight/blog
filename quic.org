@@ -10,7 +10,7 @@
 #+OPTIONS: ^:nil
 #+OPTIONS: email:t
 #+HTML_MATHJAX: align: left indent: 5em tagside: left font: Neo-Euler
-#+HTML_HEAD: <link rel="stylesheet" type="text/css"href="http://60.206.137.140:85/doc/resources/css/org-manual.css" />
+#+HTML_HEAD: <link rel="stylesheet" type="text/css"  href="http://orgmode.org/org-manual.css" />
 * 官方资源
 ** quic 下载地址
    - [[https://github.com/google/proto-quic][github 地址]]
@@ -32,7 +32,7 @@ Updating to 59.0.3062.0 (#44)
    - download.py 里下载的包倒是不会删除，会解压在单独的目录中，而install-sysroot.py  脚本会每次删除下载的包。所以修改的思路就是屏蔽到脚本里的下载和删除代码，并将下载的url打印出来。修改后用脚本跑就能看到所需资源得下载地址,
      因为代码中有判断平台的逻辑，所以最好还是用修改后的脚本去执行，从而获取地址。
    - 在  ./src/build/install-build-deps.sh  脚本里也会执行一个Python 脚本:./src/build/linux/install-chromeos-fonts.py   这个是用来安装chrome的字体的，修改逻辑同上。
-   - 以下是本机各个包的存放地址    [[../../images/quic_res.png][资源图片]]
+   - 以下是本机各个包的存放地址    [[../images/quic_res.png][资源图片]]
 
 ** 资源的使用
 
@@ -45,7 +45,3 @@ Updating to 59.0.3062.0 (#44)
 
    + 最后附上下载包地址
    + [[https://pan.baidu.com/s/1i4AUwjN#list/path%3D%252Fshare][百度云盘地址]]
-
-* quic 测试教程
-** 使用说明
-** certutil 的使用
