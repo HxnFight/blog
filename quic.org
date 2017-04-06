@@ -27,12 +27,20 @@ Updating to 59.0.3062.0 (#44)
 #+end_example
 * 手动下载资源记录
 ** 修改下载脚本
+
+
    - 因为自己的Ubuntu配置VPN后，一执行脚本下载就断网，无奈只能修改脚本手动下载
    - 在项目的README.md里，可以看到项目的执行顺序，其中 ./proto_quic_tools/sync.sh  里的两个Python文件需要修改。
    - download.py 里下载的包倒是不会删除，会解压在单独的目录中，而install-sysroot.py  脚本会每次删除下载的包。所以修改的思路就是屏蔽到脚本里的下载和删除代码，并将下载的url打印出来。修改后用脚本跑就能看到所需资源得下载地址,
      因为代码中有判断平台的逻辑，所以最好还是用修改后的脚本去执行，从而获取地址。
    - 在  ./src/build/install-build-deps.sh  脚本里也会执行一个Python 脚本:./src/build/linux/install-chromeos-fonts.py   这个是用来安装chrome的字体的，修改逻辑同上。
-   - 以下是本机各个包的存放地址    [[../images/quic_res.png][资源图片]]
+   - 以下是本机各个包的存放地址  
+
+
+#+CAPTION: 示例图片说明
+#+NAME:   quic.png
+[[./images/quic_res.png]]
+
 
 ** 资源的使用
 
