@@ -1,0 +1,8 @@
+* org-mode
+  - org-mode工作管理
+    - [[file:work/work.org][work.org]]
+  - org-mode知识管理
+    - [[file:study/study.org][study.org]]
+  - org-mode计划与日记管理
+    - [[file:life/life.org][life.org]]
+    
