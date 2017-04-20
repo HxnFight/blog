@@ -4,13 +4,12 @@
 #+AUTHOR: valjean
 #+DATE:  [2017-04-06 Thu 09:56]
 #+OPTIONS: toc:2
-#+OPTIONS: toc:t
 #+STARTUP: overview
 #+COLUMNS: %25ITEM %TAGS %TODO %3PRIORITYd
 #+OPTIONS: ^:nil
 #+OPTIONS: email:t
 #+HTML_MATHJAX: align: left indent: 5em tagside: left font: Neo-Euler
-#+HTML_HEAD: <link rel="stylesheet" type="text/css"  href="http://orgmode.org/org-manual.css" />
+#+setupfile: ~/workspace/git/doc/css/local_bigblow.setup
 * 官方资源
 ** quic 下载地址
    - [[https://github.com/google/proto-quic][github 地址]]
@@ -46,7 +45,11 @@ Updating to 59.0.3062.0 (#44)
 
    - 编译通过以后就参考[[https://www.chromium.org/quic/playing-with-quic][官方的quic 例子]]
    - 安装官网的操作即可，其中给Ubuntu root用户添加证书的地方需要注意（这个在网上找了很久，自己不会用），在执行完： ./generate-certs.sh 脚本后，其实已经生产了certutil 所需的input 文件  在  net/tools/quic/certs/out/2048-sha256-root.pem 下
-     所以给 root添加证书的命令如下 ：certutil -d sql:$HOME/.pki/nssdb -A -t "C,," -n "webmail" -i  ./src/net/tools/quic/certs/out/2048-sha256-root.pem   可以执行成功，但是查看的时候总说我的数据库比较老，这个就没再往下深究了（时间紧，谁会的话，还请指点！）
+     所以给 root添加证书的命令如下 ：
+#+BEGIN_SRC 
+certutil -d sql:$HOME/.pki/nssdb -A -t "C,," -n "webmail" -i  ./src/net/tools/quic/certs/out/2048-sha256-root.pem 
+#+END_SRC
+  可以执行成功，但是查看的时候总说我的数据库比较老，这个就没再往下深究了（时间紧，谁会的话，还请指点！）
    - 这是在网上找到的一个certutil 说明 [[http://www.richud.com/wiki/Ubuntu_chrome_browser_import_self_signed_certificate][certutil 网上说明]]
 
 ** 资源下载地址
